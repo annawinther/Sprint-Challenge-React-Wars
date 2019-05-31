@@ -10,17 +10,6 @@ class App extends Component {
     };
   }
   
-// card = (props) => {
-//     return (
-//         <div className="card">
-//             <p>Name: {props.name}</p>
-//             <p>Gender: {props.gener}</p>
-//             <p>Height: {props.height}</p>
-//             <p>Mass: { props.mass}</p>
-//             <p>Eyes: {props.eyes}</p>
-//         </div>
-//     )
-// }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
