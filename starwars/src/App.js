@@ -9,6 +9,18 @@ class App extends Component {
       starwarsChars: []
     };
   }
+  
+// card = (props) => {
+//     return (
+//         <div className="card">
+//             <p>Name: {props.name}</p>
+//             <p>Gender: {props.gener}</p>
+//             <p>Height: {props.height}</p>
+//             <p>Mass: { props.mass}</p>
+//             <p>Eyes: {props.eyes}</p>
+//         </div>
+//     )
+// }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
@@ -29,11 +41,6 @@ class App extends Component {
         throw new Error(err);
       });
   };
-
-  showCurrentChar = name => {
-    const currentChar = this.state.starwarsChars.find(char => char.name === name)
-    console.log(currentChar);
-  }
 
   render() {
     return (
