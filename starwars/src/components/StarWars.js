@@ -8,7 +8,7 @@ export default function StarWars ({ starwarsChars }){
       {starwarsChars.map(char => {
         return (
           <div className="char-info">
-                <div>Name: {char.name}</div>
+                <div className="name">Name: {char.name}</div>
                 <div>Gender: {char.gender}</div>
                 <div>Height: {char.height}</div>
                 <div>Mass: {char.mass}</div>
