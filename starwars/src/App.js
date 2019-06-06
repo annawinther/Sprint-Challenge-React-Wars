@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import StarWars from '/Users/Anna/Lambda School/Sprint 6 - React/Sprint Challenge - React/Sprint-Challenge-React-Wars/starwars/src/components/StarWars.js'
 import './App.css';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
       starwarsChars: []
     };
   }
+  
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
@@ -33,9 +35,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <StarWars
+         starwarsChars = {this.state.starwarsChars}
+         />
       </div>
     );
   }
 }
+
+
 
 export default App;
